@@ -12,10 +12,10 @@ import lombok.NoArgsConstructor;
 public class CourseDto {
 
     private String courseName;
-
-    private String courseLocation;
-
-    private String courseContent;
-
-    private long teacherId;
+//
+//    private String courseLocation;
+//
+//    private String courseContent;
+//
+//    private long teacherId;
 }

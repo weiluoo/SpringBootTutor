@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 
 import com.example.demo.modal.Course;
+import com.example.demo.modal.dto.CourseDto;
 import com.example.demo.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,8 +17,17 @@ public class CourseService {
     @Autowired
     CourseRepository courseRepository;
 
-    public List<Course> findAllCourses(){
-
+    public List<Course> findAllCourses() {
         return courseRepository.findAllClasses();
     }
+
+    public List<CourseDto> findAllCourses2() {
+        return courseRepository.findAllClasses2();
+    }
+
+    public List<Course> searchByCourseName(String input) {
+        return courseRepository.findAllCourse(input);
+    }
+
+
 }
